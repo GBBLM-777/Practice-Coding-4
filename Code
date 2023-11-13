@@ -1,0 +1,32 @@
+/*Create a C++ program that displays a 10 x 10 multiplication Table */
+
+#include<iostream>
+#include<iomanip>
+
+using namespace std;
+
+int main()
+{
+	//declaration statement
+	const int sizeRow=10;
+	const int sizeCol=10;
+	int row, col;
+	
+	//executable statement
+	cout<<"++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"<<endl;
+	cout<<""<<endl;
+	cout<<"                           Multiplication Table"<<endl;
+	cout<<""<<endl;
+	cout<<"++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"<<endl;
+	
+	for (row=1; row<=sizeRow; row++)
+	{
+		for (col=1; col<=sizeCol; col++)
+		{
+			cout<<setw(7)<<row*col;
+		}
+		
+		cout<<endl;
+		
+	}
+}
